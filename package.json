@@ -29,7 +29,7 @@
         "clean:lib": "rimraf lib",
         "clean:modules": "rimraf node_modules",
         "prepare": "husky install",
-        "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src",
+        "lint": "eslint --ext .vue,.js,.jsx,.ts,.tsx  --ignore-path .gitignore --fix packages",
         "format": "prettier .  --write",
         "release": "standard-version",
         "release:alpha": "standard-version --prerelease alpha",
@@ -91,6 +91,7 @@
         "vite": "^3.0.9",
         "vite-plugin-dts": "^1.2.0",
         "vite-plugin-md": "^0.15.0",
+        "vite-plugin-meta-env": "^1.0.0",
         "vue": "^3.2.33",
         "vue-tsc": "^0.40.1"
     },
